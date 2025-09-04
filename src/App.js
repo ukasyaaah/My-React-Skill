@@ -6,6 +6,7 @@ import Header from "./components/Header";
 import MyComponent from "./components/MyComponent";
 import Product from "./components/Product";
 import Football from "./components/Football";
+import Goal from "./components/Goal";
 
 const products = [
   {
@@ -43,6 +44,7 @@ function App() {
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <Football />
+        <Goal goal={false} />
         <MyComponent />
         <Title />
         <Header />
