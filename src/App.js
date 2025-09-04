@@ -6,6 +6,7 @@ import ProductPage from "./pages/Product";
 import Goal from "./components/Goal";
 import Football from "./components/Football";
 import FavoriteColor from "./pages/FavoriteColor";
+import Form from "./pages/Form";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path="/goal" element={<Goal goal={true} />} />
         <Route path="/football" element={<Football />} />
         <Route path="/color" element={<FavoriteColor />} />
+        <Route path="/form" element={<Form />} />
       </Routes>
     </BrowserRouter>
   );

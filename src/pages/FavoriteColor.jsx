@@ -18,7 +18,7 @@ export default function FavoriteColor() {
         My Favorite Color is
         <span
           style={
-            color === "white"
+            color === "white" 
               ? { backgroundColor: "black", ...style }
               : { backgroundColor: `${color}`, ...style }
           }
