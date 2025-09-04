@@ -8,7 +8,7 @@ export default function Form() {
     const value = e.target.value;
 
     // ...values, biar object sebelumnya di state ga ilang / ketimpa
-    setInputs((values) => ({ ...values, [name]: value }));
+    setInputs((values) => ({...values, [name]: value,  }));
   }
 
   function handleSubmit(e) {
