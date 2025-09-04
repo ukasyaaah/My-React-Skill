@@ -4,6 +4,8 @@ import Title from "./components/Title";
 import Body from "./components/Body";
 import Header from "./components/Header";
 import MyComponent from "./components/MyComponent";
+import Product from "./components/Product";
+import Football from "./components/Football";
 
 const products = [
   {
@@ -18,31 +20,13 @@ const products = [
     price: 12000000,
     discount: 40,
   },
-   {
+  {
     id: 3,
     name: "Bag",
     price: 30000,
     discount: 10,
   },
-
 ];
-
-function Product({ price, name, discount = 0 }) {
-  return (
-    <div>
-      <h2>{name} </h2>
-      <p>
-        <s> {price} </s> ({discount}%)
-      </p>
-      <p>
-        <b>
-          Rp. {parseInt(price) - (parseInt(price) * parseInt(discount)) / 100}{" "}
-        </b>
-      </p>
-      <hr />
-    </div>
-  );
-}
 
 function App() {
   return (
@@ -58,8 +42,8 @@ function App() {
 
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
+        <Football />
         <MyComponent />
-
         <Title />
         <Header />
         <Body />
